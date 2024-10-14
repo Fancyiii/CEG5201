@@ -18,7 +18,7 @@ with open('integer_data.json', 'r') as file:
 
 def partition(A, lo, hi):
     pivot = A[lo]
-    i = lo + 1
+    i = lo
     j = hi
 
     while(1):
@@ -27,7 +27,6 @@ def partition(A, lo, hi):
         while(j > lo and A[j] >= pivot):
             j -= 1
         if i >= j:
-            A[j], A[lo] = A[lo], A[j] #swap pivot to its correct position
             return j
         A[j], A[i] = A[i], A[j] #swap A[i] and A[j]
 
@@ -56,6 +55,7 @@ if __name__ == "__main__":
             quickSort(arr, 0, n - 1)
             T.append(time.time() - start_time)
         GroupT.append(T)
-
     print(GroupT)
+
+
 
