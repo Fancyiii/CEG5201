@@ -21,17 +21,43 @@ def quickSort(A, lo, hi):
         p = partition(A, lo, hi)
         quickSort(A, lo, p)
         quickSort(A, p + 1, hi)
+    return A
 
-# Verify the sorted array
-def verify(A):
-    for i in range(0, len(A)):
-        for j in range(i, len(A)):
-            if A[i] > A[j]:
-                return False
-    return True
-        
+def quickSortSeq_twoProc(A):
+
+    lowerHalf = [x for x in A if x <= A[0]]
+    upperHalf = [x for x in A if x > A[0]]
+
+    with multiprocessing.Pool(processes=2) as pool:
+        args = [(lowerHalf, 0, len(lowerHalf)-1), (upperHalf, 0, len(upperHalf)-1)]
+        sortedLoerHalf, sortedUpperHalf = pool.starmap(quickSort, args)
+    return sortedLoerHalf + sortedUpperHalf
+
+def quickSortSeq_fourProc(A):
+
+    lowerHalf = [x for x in A if x <= A[0]]
+    upperHalf = [x for x in A if x > A[0]]
+
+    j = partition(A, 0, len(A)-1)
+
+    with multiprocessing.Pool(processes=4) as pool:
+        args = [(lowerHalf, 0, len(lowerHalf)-1), (upperHalf, 0, len(upperHalf)-1)]
+        sortedLoerHalf, sortedUpperHalf = pool.starmap(quickSort, args)
+    return sortedLoerHalf + sortedUpperHalf
+
+def quickSortSeq_eightProc(A):
+
+    lowerHalf = [x for x in A if x <= A[0]]
+    upperHalf = [x for x in A if x > A[0]]
+
+    with multiprocessing.Pool(processes=8) as pool:
+        args = [(lowerHalf, 0, len(lowerHalf)-1), (upperHalf, 0, len(upperHalf)-1)]
+        sortedLoerHalf, sortedUpperHalf = pool.starmap(quickSort, args)
+    return sortedLoerHalf + sortedUpperHalf
+
 
 if __name__ == "__main__":
+
 
     # Calculate time taken for arrays in group 0
     df = pd.read_csv("group_0.csv")
