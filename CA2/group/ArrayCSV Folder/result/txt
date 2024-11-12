@@ -1,0 +1,90 @@
+Sorting times for each array in group 0:
+Array array_0: 0.000108 seconds
+Array array_1: 0.000248 seconds
+Array array_2: 0.000637 seconds
+Array array_3: 0.001724 seconds
+Array array_4: 0.002992 seconds
+Array array_5: 0.005198 seconds
+Array array_6: 0.009227 seconds
+Array array_7: 0.034704 seconds
+
+Sorting times for each group:
+Group 0: 0.058048 seconds
+Group 1: 0.057330 seconds
+Group 2: 0.039852 seconds
+Group 3: 0.050736 seconds
+Group 4: 0.055721 seconds
+Group 5: 0.050890 seconds
+Group 6: 0.054951 seconds
+Group 7: 0.052320 seconds
+Group 8: 0.042900 seconds
+Group 9: 0.047700 seconds
+
+================================================= 2 processor
+Sorting times for each array in group 0:
+Array array_0: 0.033420 seconds
+Array array_1: 0.011647 seconds
+Array array_2: 0.008449 seconds
+Array array_3: 0.010357 seconds
+Array array_4: 0.010611 seconds
+Array array_5: 0.015651 seconds
+Array array_6: 0.017854 seconds
+Array array_7: 0.024879 seconds
+
+Sorting times for each group:
+Group 0: 0.104165 seconds
+Group 1: 0.105894 seconds
+Group 2: 0.111263 seconds
+Group 3: 0.093899 seconds
+Group 4: 0.094473 seconds
+Group 5: 0.095644 seconds
+Group 6: 0.095689 seconds
+Group 7: 0.115496 seconds
+Group 8: 0.108644 seconds
+Group 9: 0.093468 seconds
+
+================================================= 4 processor
+Sorting times for each array in group 0:
+Array array_0: 0.019330 seconds
+Array array_1: 0.011843 seconds
+Array array_2: 0.012070 seconds
+Array array_3: 0.013717 seconds
+Array array_4: 0.015910 seconds
+Array array_5: 0.017561 seconds
+Array array_6: 0.023094 seconds
+Array array_7: 0.025221 seconds
+
+Sorting times for each group:
+Group 0: 0.112074 seconds
+Group 1: 0.114728 seconds
+Group 2: 0.123480 seconds
+Group 3: 0.124117 seconds
+Group 4: 0.130580 seconds
+Group 5: 0.113846 seconds
+Group 6: 0.122082 seconds
+Group 7: 0.122503 seconds
+Group 8: 0.124491 seconds
+Group 9: 0.126503 seconds
+
+================================================ 8 Proc
+Sorting times for each array in group 0:
+Array array_0: 0.027193 seconds
+Array array_1: 0.017141 seconds
+Array array_2: 0.020154 seconds
+Array array_3: 0.021002 seconds
+Array array_4: 0.019417 seconds
+Array array_5: 0.021027 seconds
+Array array_6: 0.031411 seconds
+Array array_7: 0.029648 seconds
+
+Sorting times for each group:
+Group 0: 0.208743 seconds
+Group 1: 0.207243 seconds
+Group 2: 0.177441 seconds
+Group 3: 0.188354 seconds
+Group 4: 0.238647 seconds
+Group 5: 0.278630 seconds
+Group 6: 0.171364 seconds
+Group 7: 0.215917 seconds
+Group 8: 0.175134 seconds
+Group 9: 0.154763 seconds
